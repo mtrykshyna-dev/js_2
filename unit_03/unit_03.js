@@ -1,7 +1,9 @@
 // Task 1
-/
+
 function f1(){
-   
+   let val = +document.querySelector(".i-1").value;
+   let result = (val == 4);
+   document.querySelector('.out-1').textContent = result;
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -11,7 +13,10 @@ document.querySelector('.b-1').onclick = f1;
 
 
 function f2(){
-  
+  let a = 10;
+  let b = 40;
+  let result = (a > b)? a : b;
+  document.querySelector('.out-2').textContent = result;
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -20,7 +25,10 @@ document.querySelector('.b-2').onclick = f2;
 // Task 3
 
 function f3(){
-   
+  let a = +document.querySelector('.i-31').value;
+  let b = +document.querySelector('.i-32').value;
+  let result = (a > b)? a : b;
+  document.querySelector('.out-3').textContent = result;
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -30,7 +38,10 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
-  
+  let birthYear = +document.querySelector('.i-4').value;
+  let currentYear= new Date().getFullYear();
+  let result = (currentYear - birthYear >= 18)? 1 : 0;
+  document.querySelector('.out-4').textContent = result;
 }
 
 document.querySelector('.b-4').onclick = f4;
@@ -140,7 +151,9 @@ document.querySelector('.b-14').onclick = f14;
 
 
 function f15() {
-  
+  let a = document.querySelector('.s-151').value;
+  let b = document.querySelector('.s-152').value;
+  let oper = document.querySelector('.s-153').value;
 }
 
 document.querySelector('.b-15').onclick = f15;
